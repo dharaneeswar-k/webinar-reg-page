@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Complete Your Payment - WebNest</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --primary-dark: #3a56d4;
+      --secondary-color: #6c757d;
+      --light-bg: #f0f4f8;
+      --white: #fff;
+      --text-color: #333;
+      --text-light: #888;
+      --border-radius: 12px;
+      --box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      --transition: all 0.3s ease;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light-bg);
+      padding: 20px;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: var(--white);
+      padding: 30px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: var(--primary-color);
+      font-size: 1.8rem;
+    }
+    
+    .payment-methods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .method {
+      text-align: center;
+      padding: 15px;
+      background: var(--white);
+      border-radius: var(--border-radius);
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      transition: var(--transition);
+    }
+    
+    .method:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .method p {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+    
+    .method img {
+      width: 100%;
+      max-width: 180px;
+      border-radius: 8px;
+      margin: 0 auto;
+      display: block;
+      border: 1px solid #eee;
+    }
+    
+    .upi {
+      font-weight: bold;
+      background-color: #eef1f4;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 10px;
+      word-break: break-word;
+      font-family: monospace;
+      color: var(--text-color);
+    }
+    
+    .upload-section {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .upload-section label {
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: block;
+      color: var(--text-color);
+    }
+    
+    .file-input-wrapper {
+      position: relative;
+      margin: 20px auto;
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    .file-input-wrapper input[type="file"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    .file-input-label {
+      display: block;
+      padding: 12px 20px;
+      background-color: var(--primary-color);
+      color: white;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    
+    .file-input-label:hover {
+      background-color: var(--primary-dark);
+    }
+    
+    #preview {
+      margin: 20px auto;
+      max-width: 100%;
+      max-height: 300px;
+      border-radius: var(--border-radius);
+      border: 1px dashed #ddd;
+      display: none;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      transition: var(--transition);
+      text-align: center;
+    }
+    
+    .btn:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    
+    .btn-secondary {
+      background-color: var(--secondary-color);
+    }
+    
+    .btn-secondary:hover {
+      background-color: #5a6268;
+    }
+    
+    .note {
+      font-size: 14px;
+      color: var(--text-light);
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    .file-name {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--text-light);
+    }
+    
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+      
+      .payment-methods {
+        grid-template-columns: 1fr;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Complete Your Payment</h2>
+  
+    <div class="payment-methods">
+      <div class="method">
+        <p>QR Code 1</p>
+        <img src="images/qr1.png" alt="QR Code 1">
+      </div>
+      <div class="method">
+        <p>QR Code 2</p>
+        <img src="images/qr2.png" alt="QR Code 2">
+      </div>
+      <div class="method">
+        <p>UPI ID 1</p>
+        <div class="upi">6382984042@fam</div>
+      </div>
+      <div class="method">
+        <p>UPI ID 2</p>
+        <div class="upi">chandru73473@oksbi</div>
+      </div>
+    </div>
+  
+    <form id="upload-form" class="upload-section" enctype="multipart/form-data">
+      <label for="screenshot">Upload Payment Screenshot</label>
+      
+      <div class="file-input-wrapper">
+        <input type="file" id="screenshot" name="screenshot" accept="image/*" required />
+        <label for="screenshot" class="file-input-label">Choose File</label>
+      </div>
+      <div class="file-name" id="file-name">No file chosen</div>
+      
+      <img id="preview" alt="Payment screenshot preview" />
+      
+      <div class="btn-group">
+        <button type="submit" class="btn">Submit Payment Proof</button>
+        <button type="button" class="btn btn-secondary" onclick="window.location.href='index.html'">← Back to Registration</button>
+      </div>
+    </form>
+  
+    <p class="note">* After submitting, your payment will be verified within 24 hours.</p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
