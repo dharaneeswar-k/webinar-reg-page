@@ -3,98 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebNest Webinar - Frontend Mastery</title>
+  <title>Bootcamp - Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="container">
-      <a href="#home" class="logo">
-        <img src="images/logo.png" alt="WebNest Logo" />
-      </a>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">
-        <i class="fas fa-bars"></i>
-      </button>
+      <a href="#" class="logo"><img src="images/logo.png" alt="WebNest Logo" /></a>
+      <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
       <nav class="main-nav">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#bootcamp">Bootcamp</a></li>
+          <li><a href="#agenda">Agenda</a></li>
           <li><a href="#register">Register</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero" id="home">
+  <section class="hero" id="bootcamp">
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
-          <h1><span>Frontend Webinar</span><br>Master the Art of UI & UX</h1>
-          <p>🚀 A 4-day LIVE journey into frontend development, design thinking, and real-world UI/UX — all for just ₹49!</p>
-          <p class="highlight">Open to 12th-grade graduates stepping into tech!</p>
+          <h1><span>Full-Stack Bootcamp</span><br>Start Your Dev Journey</h1>
+          <p>🚀 Free 1-hour live session for aspiring developers, hosted by WebNest Technologies.</p>
+          <p class="highlight">Sunday, 27th April | 7:00 PM - 8:00 PM | Open to 12th-grade students</p>
           <div class="cta-group">
-            <a href="#register" class="cta-primary">Join Now for ₹49</a>
-            <a href="#about" class="cta-secondary">Learn More</a>
+            <a href="#register" class="cta-primary">Register Free</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="info" id="about">
+  <section class="info" id="agenda">
     <div class="container">
       <h2>What You'll Learn</h2>
       <div class="cards">
         <div class="card">
-          <div class="card-icon">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3>HTML & CSS Mastery</h3>
-          <p>Craft pixel-perfect web pages from scratch with modern techniques.</p>
+          <div class="card-icon"><i class="fas fa-code"></i></div>
+          <h3>Intro to Full-Stack</h3>
+          <p>Understand frontend, backend, and how they work together.</p>
         </div>
         <div class="card">
-          <div class="card-icon">
-            <i class="fas fa-mobile-alt"></i>
-          </div>
-          <h3>Responsive Design</h3>
-          <p>Make your websites look stunning on all devices and screen sizes.</p>
+          <div class="card-icon"><i class="fas fa-tools"></i></div>
+          <h3>Key Tools & Tech</h3>
+          <p>HTML, CSS, JS, Node.js, APIs, and best resources to begin with.</p>
         </div>
         <div class="card">
-          <div class="card-icon">
-            <i class="fas fa-project-diagram"></i>
-          </div>
-          <h3>Live Projects</h3>
-          <p>Work on real-world UI projects with professional guidance.</p>
+          <div class="card-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Next Steps</h3>
+          <p>Q&A + Exclusive invite to our Advanced Frontend Webinar.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="countdown" id="highlights">
-    <div class="container">
-      <h2>Limited Time Offer</h2>
-      <p class="subtitle">Registration closes in:</p>
-      <div id="timer">
-        <div class="timer-unit">
-          <span id="days">00</span>
-          <small>Days</small>
-        </div>
-        <div class="timer-unit">
-          <span id="hours">00</span>
-          <small>Hours</small>
-        </div>
-        <div class="timer-unit">
-          <span id="minutes">00</span>
-          <small>Minutes</small>
-        </div>
-        <div class="timer-unit">
-          <span id="seconds">00</span>
-          <small>Seconds</small>
-        </div>
-      </div>
-      <a href="#register" class="cta-primary">Secure Your Spot Now</a>
     </div>
   </section>
 
@@ -102,17 +65,17 @@
     <div class="container">
       <div class="registration-content">
         <div class="registration-text">
-          <h2>Ready to Transform Your Skills?</h2>
-          <p>Join our exclusive webinar and take your first step towards becoming a frontend expert.</p>
+          <h2>Register for Free</h2>
+          <p>Get the roadmap, resources, and real-world advice on becoming a full-stack developer.</p>
           <ul class="benefits-list">
-            <li><i class="fas fa-check-circle"></i> Live interactive sessions</li>
-            <li><i class="fas fa-check-circle"></i> Hands-on projects</li>
-            <li><i class="fas fa-check-circle"></i> Networking Opportunities</li>
-            <li><i class="fas fa-check-circle"></i> Interactive Q&A Sessions</li>
+            <li><i class="fas fa-check-circle"></i> Live expert session</li>
+            <li><i class="fas fa-check-circle"></i> Personalized Q&A</li>
+            <li><i class="fas fa-check-circle"></i> Free resources & learning plan</li>
+            <li><i class="fas fa-check-circle"></i> Priority access to future events</li>
           </ul>
         </div>
         <form id="registration-form" class="registration-form">
-          <h3>Register Now</h3>
+          <h3>Join the Bootcamp</h3>
           <div class="form-group">
             <input type="text" name="name" placeholder="Full Name" required />
           </div>
@@ -134,8 +97,8 @@
           <div class="form-group">
             <input type="number" name="age" placeholder="Age" required min="10" max="100" />
           </div>
-          <button type="submit" class="cta-primary">Pay ₹49 & Secure Spot</button>
-          <p class="form-note">Limited seats available. Registration ends soon!</p>
+          <button type="submit" class="cta-primary">Register Free</button>
+          <p class="form-note">Hurry! Limited seats only.</p>
         </form>
       </div>
     </div>
@@ -143,27 +106,27 @@
 
   <section class="contact-info">
     <div class="container">
-      <p style="text-align: center; color: #ccc; font-size: 1rem;">
-        📩 For any help while registering, contact us at 
-        <a href="mailto:contact@thewebnest.com" style="color: #4393f7; text-decoration: underline;">
+      <p style="text-align:center;color:#ccc;font-size:1rem;">
+        📩 Need help? Contact us at 
+        <a href="mailto:contact@thewebnest.com" style="color:#4393f7;text-decoration:underline;">
           contact@thewebnest.com
         </a>
       </p>
     </div>
-  </section>  
+  </section>
 
   <footer>
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
           <img src="images/logo.png" alt="WebNest Logo" class="footer-logo" />
-          <p>Empowering the next generation of web developers.</p>
+          <p>Empowering future full-stack developers.</p>
         </div>
         <div class="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#bootcamp">Bootcamp</a></li>
+            <li><a href="#agenda">Agenda</a></li>
             <li><a href="#register">Register</a></li>
           </ul>
         </div>
@@ -178,15 +141,14 @@
       <div class="footer-bottom">
         <p>&copy; 2025 WebNest Technologies. All rights reserved.</p>
         <div class="social-links">
-          <a href="https://www.facebook.com/profile.php?id=61566781554016&mibextid=ZbWKwL " aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/invites/contact/?igsh=1ho7dg97frwuk&utm_content=vzzuvfk" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/webnest-technologies2024/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="boot.js"></script>
 </body>
 </html>
