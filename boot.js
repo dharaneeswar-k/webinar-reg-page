@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
           if (response.ok && result.success) {
             alert("Registration successful! Redirecting to WhatsApp group...");
             // ✅ Redirect to your WhatsApp group
-            window.location.href = "https://chat.whatsapp.com/YOUR_WHATSAPP_GROUP_LINK";
+            window.location.href = "https://chat.whatsapp.com/Hwt92wEtzCMFpHhmZh0dFk";
           } else {
             throw new Error(result.error || "Something went wrong");
           }
